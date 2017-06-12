@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- The first child in the layout is for the main Activity UI-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        tools:context=".MainActivity"
+        android:background="#0000FF00">
+
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="313dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:text="Light1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light2"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_alignBaseline="@+id/switch4"
+            android:layout_alignBottom="@+id/switch4"
+            android:layout_alignLeft="@+id/switch1"
+            android:layout_alignStart="@+id/switch1" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fan1"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_above="@+id/powerall"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp" />
+
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fan2"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/switch3"
+            android:layout_alignStart="@+id/switch3" />
+
+        <Switch
+            android:id="@+id/powerall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switch1"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp"
+            android:text="Power All" />
+
+
+    </RelativeLayout>
+
+    <!-- Side navigation drawer UI -->
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"/>
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
