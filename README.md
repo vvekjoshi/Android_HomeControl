@@ -1,4 +1,4 @@
-# homeControl_android
+# Android_HomeControl
 This android repository uses MQTT (IoT protocol) client for communication to a broker server. It implements basic functionlity for home appliances control which could be used for bigger Home automation applications.
 The functionality includes:-
 1. Setting up client with username and password.
